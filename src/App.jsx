@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Phasmo from "./components/phasmo";
+import Ghost from "./components/ghost";
+import About from "./components/about";
 import "./App.css";
 
 function App() {
@@ -11,21 +13,11 @@ function App() {
     }
 
     if (currentPage === "ghosts") {
-      return (
-        <div className="content">
-          <h1>Ghosts</h1>
-          <p>Ghost page coming soon.</p>
-        </div>
-      );
+      return <Ghost />;
     }
 
     if (currentPage === "about") {
-      return (
-        <div className="content">
-          <h1>About Us</h1>
-          <p>This project is a guide to Phasmophobia ghosts.</p>
-        </div>
-      );
+      return <About />;
     }
 
     return <Phasmo />;
@@ -41,7 +33,7 @@ function App() {
         </div>
       </div>
 
-      {renderPage()}
+      <div className="content">{renderPage()}</div>
 
       <footer className="footer">
         <p>Thank you for visiting</p>
@@ -49,4 +41,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

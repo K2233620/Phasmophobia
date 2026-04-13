@@ -1,0 +1,130 @@
+.ghost-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  background: #0f0f0f;
+}
+
+.ghost-page h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.ghost-search {
+  padding: 10px 15px;
+  width: 250px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.evidence-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.evidence-bar button {
+  padding: 8px 12px;
+  border: 1px solid #777;
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.evidence-bar button:hover {
+  background: #333;
+}
+
+.evidence-bar .active {
+  background: #fff;
+  color: #000;
+}
+
+.ghost-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.ghost-card {
+  border: 1px solid #888;
+  border-radius: 8px;
+  padding: 15px;
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 220px;
+  transition: 0.3s;
+}
+
+.ghost-card:hover {
+  transform: translateY(-5px);
+  border-color: #fff;
+}
+
+.ghost-card-top h2 {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.ghost-card-top h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: #aaa;
+  margin: 8px auto 0;
+}
+
+.ghost-card-bottom {
+  margin-top: auto;
+}
+
+.ghost-card-bottom h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #666;
+  position: relative;
+}
+
+.ghost-card-bottom h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #666;
+  margin: 6px auto 0;
+}
+
+.ghost-card-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ghost-card-bottom li {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #ccc;
+}
