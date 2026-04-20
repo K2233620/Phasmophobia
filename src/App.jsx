@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Phasmo from "./components/phasmo";
+import Phasmo from "./components/PhasmoPage";
 import Ghost from "./components/ghost";
 import About from "./components/about";
 import "./App.css";

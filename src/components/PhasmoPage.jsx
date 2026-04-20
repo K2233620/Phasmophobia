@@ -1,4 +1,4 @@
-import "./Phasmo.scss";
+import "./PhasmoPage.scss";
 
 import feature1 from "../assets/images/feature1.png";
 import feature2 from "../assets/images/feature2.png";
