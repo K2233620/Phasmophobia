@@ -102,6 +102,8 @@ function Ghost() {
         className="ghost-search"
       />
 
+      <h3 className="filter-title">Filter by Evidence</h3>
+
       <div className="evidence-bar">
         {evidenceList.map((evi, index) => (
           <button
